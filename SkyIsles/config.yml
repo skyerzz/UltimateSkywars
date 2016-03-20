@@ -1,0 +1,69 @@
+#Configuration file for SkyWars by skyerzz
+#
+#IF YOU CHANGE ANYTHING IN THIS FILE, USE /SkyWars reload INGAME!
+#ONLY USE SPACES IN THIS FILE, NO TABS!
+#
+#The prefix for the plugin. Leave empty for no prefix.
+#For color codes, use "&" and then the color code (1-f)
+#Enclose your prefix between ' ' (such as 'PREFIX')
+prefix: '&0[&9SkyWars&0]'
+
+#resetting the islands, teleporting blocks
+#always make sure that loc1 is the lowest x, y and z coordinate, and loc2 is the highest x,y and z coordinate. Otherwise it will not work!
+#copy all blocks within the area of these 2 locations
+copyloc1: 0,22,0
+copyloc2: 18,32,18
+#to the area of these 2 locations
+copytoloc1: 0,40,0
+copytoloc2: 18,50,18
+
+#teleport to lobby: x,y,z,yaw,pitch
+lobby: 0,28,0,0,0
+
+#maximum amount of players in-game.
+maxplayers: 5
+#start when in-game player amount reaches this
+startonplayercount: 3
+
+#the coins a kill/ a win rewards
+coinsonkill: 25
+coinsonwin: 100
+
+game:
+   island:
+          mid:
+            chests:
+               1: 0,30,0,east
+               2: 0,31,0,west
+               3: 0,32,0,south
+               4: 0,33,0,north
+          1:
+            spawnlocation: 2,45,2,0,0
+            chests:
+               1: 2,43,2,north
+               2: 2,42,2,south
+               3: 2,41,2,west
+          2:
+            spawnlocation: 6,41,2,0,0
+            chests:
+               1: 6,43,2,north
+               2: 6,42,2,south
+               3: 6,41,2,west
+          3:
+            spawnlocation: 10,41,2,0,0
+            chests:
+               1: 10,43,2,north
+               2: 10,42,2,south
+               3: 10,41,2,west
+          4:
+            spawnlocation: 14,41,2,0,0
+            chests:
+               1: 14,43,2,north
+               2: 14,42,2,south
+               3: 14,41,2,west
+          5:
+            spawnlocation: 18,41,2,0,0
+            chests:
+               1: 18,43,2,north
+               2: 18,42,2,south
+               3: 18,41,2,west

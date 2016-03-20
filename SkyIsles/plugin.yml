@@ -1,0 +1,111 @@
+#SkyWars
+name: SkyWars
+main: com.sky.isles.Main
+version: 1.0.0
+prefix: SkyWars
+
+commands:
+  SkyWars:
+    description: Standard command for SkyWars
+    aliases: sw
+    
+permissions:
+    SkyWars.*:
+        description: Gives access to all SkyWars commands
+        children:
+            SkyWars.reload: true
+            SkyWars.start: true
+            SkyWars.join: true
+            SkyWars.quit: true
+            SkyWars.lobby: true
+            SkyWars.reset: true
+            SkyWars.spawnchest: true
+            SkyWars.stats: true
+            SkyWars.coins: true
+            SkyWars.spawnshop: true
+            SkyWars.config: true
+            SkyWars.killshop: true
+            SkyWars.set.*: true
+            SkyWars.remove.*: true
+            SkyWars.island: true
+    SkyWars.set.*:
+         description: gives access to all Skywars set commands
+         children:
+            SkyWars.set.prefix: true
+            SkyWars.set.arena: true
+            SkyWars.set.template: true
+            SkyWars.set.lobby: true
+            SkyWars.set.maxplayers: true
+            SkyWars.set.startonplayers: true
+            SkyWars.set.coinsonwin: true
+            SkyWars.set.coinsonkill: true
+    SkyWars.remove.*:
+         description: gives access to all Skywars remove commands
+         children:
+            SkyWars.remove.prefix: true
+            SkyWars.remove.arena: true
+            SkyWars.remove.template: true
+            SkyWars.remove.island: true
+            SkyWars.remove.maxplayers: true
+            SkyWars.remove.startonplayers: true
+            SkyWars.remove.coinsonwin: true
+            SkyWars.remove.coinsonkill: true
+    SkyWars.reload:
+        description: Gives access to the reload command
+        default: op
+    SkyWars.start:
+        default: op
+    SkyWars.join:
+        default: true
+    SkyWars.quit:
+        default: true
+    SkyWars.island:
+        default: op
+    SkyWars.lobby:
+        default: true
+    SkyWars.reset:
+        default: op
+    SkyWars.spawnchest:
+        default: op
+    SkyWars.stats:
+        default: op 
+    SkyWars.coins:
+        default: op 
+    SkyWars.spawnshop:
+        default: op
+    SkyWars.killshop:
+        default: op
+    SkyWars.config:
+        default: op
+    SkyWars.set.template:
+        default: op
+    SkyWars.set.arena:
+        default: op
+    SkyWars.set.prefix:
+        default: op
+    SkyWars.set.lobby:
+        default: op
+    SkyWars.set.maxplayers:
+        default: op
+    SkyWars.set.startonplayers:
+        default: op
+    SkyWars.set.coinsonwin:
+        default: op
+    SkyWars.set.coinsonkill:
+        default: op
+    SkyWars.remove.template:
+        default: op
+    SkyWars.remove.arena:
+        default: op
+    SkyWars.remove.prefix:
+        default: op
+    SkyWars.remove.island:
+        default: op
+    SkyWars.remove.maxplayers:
+        default: op
+    SkyWars.remove.startonplayers:
+        default: op
+    SkyWars.remove.coinsonwin:
+        default: op
+    SkyWars.remove.coinsonkill:
+        default: op
